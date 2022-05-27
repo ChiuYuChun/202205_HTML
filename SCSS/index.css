@@ -207,7 +207,7 @@ sub {
 
 .page1 {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
-  background-position: 50% 400px,-20% 65%;
+  background-position: 50% 400px,-25% 65%;
   background-size: 334px,135px;
   background-repeat: no-repeat;
 }
@@ -233,15 +233,26 @@ sub {
   .page2 {
     background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
     background-repeat: no-repeat;
-    background-position: 110% 55%;
+    background-position: 110% 50%;
     background-size: 135px;
   }
   .page2 h2 {
     font-size: 28px;
   }
   .page2 h3 {
+    width: 334px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 80px;
     font-size: 18px;
-    padding: 0 20px;
+    margin-bottom: 8px;
   }
 }
 
@@ -261,10 +272,6 @@ html {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-* {
-  outline: 0.5px solid red;
 }
 
 .header {
@@ -289,18 +296,31 @@ html {
           align-items: center;
   background: #FF5D50;
   color: white;
-  padding: 8px 32px;
+  padding: 12px 32px;
   border-radius: 22px;
   text-decoration: none;
 }
 
 @media (max-width: 768px) {
   .header {
-    border-bottom: 2px solid #FFD153;
+    border-bottom: 3px solid #FFD153;
     width: 100%;
   }
   .header img {
     width: 160px;
+  }
+  .header .a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #FF5D50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 22px;
+    text-decoration: none;
   }
 }
 
@@ -347,6 +367,13 @@ html {
   width: 450px;
 }
 
+@media (max-width: 768px) {
+  .banner-l .p2 {
+    width: 440px;
+    margin: 0;
+  }
+}
+
 .banner-r {
   width: 532px;
 }
@@ -356,8 +383,16 @@ html {
   margin-top: 100px;
 }
 
-.card-img {
-  width: 90px;
+@media (max-width: 768px) {
+  .textbg {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textbg2 {
+    margin-top: 60px;
+  }
 }
 
 .item {
@@ -379,10 +414,19 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 74px;
   }
   .item h2 {
     font-size: 18px;
+  }
+}
+
+.item .card-img {
+  width: 90px;
+}
+
+@media (max-width: 768px) {
+  .item .card-img {
+    width: 60px;
   }
 }
 
@@ -429,6 +473,14 @@ html {
   background: white;
 }
 
+@media (max-width: 768px) {
+  .listbox-sm {
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 335px;
+  }
+}
+
 .listbox-sm .listtext {
   width: 230px;
   -webkit-box-orient: vertical;
@@ -449,6 +501,12 @@ html {
 
 .listbox-sm .listtext p {
   padding: 16px 0 24px;
+}
+
+@media (max-width: 768px) {
+  .listbox-sm .listtext {
+    margin: 0 auto;
+  }
 }
 
 .listrobot {
@@ -477,6 +535,7 @@ html {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin: 60px auto;
   }
   .listrobot .listrobot-l {
     width: 335px;
@@ -532,7 +591,7 @@ html {
 
 @media (max-width: 756px) {
   .listrobot-l-item {
-    margin: 24px 15px;
+    margin: 24px 15px 0 15px;
   }
 }
 
@@ -581,11 +640,27 @@ html {
     margin-left: 0;
   }
   .listrobot-r h3 {
+    margin: 0 auto;
     font-size: 28px;
+    margin-bottom: 16px;
+    text-align: center;
   }
   .listrobot-r p {
     font-size: 16px;
     text-align: center;
+  }
+  .listrobot-r a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #56C4C5;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 27px;
+    text-decoration: none;
   }
 }
 
@@ -715,6 +790,13 @@ html {
   margin-bottom: 100px;
 }
 
+@media (max-width: 768px) {
+  .price .price-btn {
+    width: 335px;
+    margin-bottom: 60px;
+  }
+}
+
 .price .price-btn a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -736,8 +818,9 @@ html {
 }
 
 @media (max-width: 768px) {
-  .price .price-btn {
-    padding-bottom: 60px;
+  .price .price-btn a {
+    margin-top: 24px;
+    font-size: 18px;
   }
 }
 
