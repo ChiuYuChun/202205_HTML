@@ -446,6 +446,7 @@ html {
 
 @media (max-width: 768px) {
   .listbox {
+    width: 375px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -537,7 +538,6 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 53px;
   }
 }
 
@@ -759,7 +759,7 @@ html {
   .price {
     background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 375px;
     z-index: -1;
     padding-top: 100px;
   }
