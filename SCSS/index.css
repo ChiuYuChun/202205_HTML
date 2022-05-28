@@ -240,17 +240,6 @@ sub {
     font-size: 28px;
   }
   .page2 h3 {
-    width: 334px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 80px;
     font-size: 18px;
     margin-bottom: 8px;
   }
@@ -304,7 +293,7 @@ html {
 @media (max-width: 768px) {
   .header {
     border-bottom: 3px solid #FFD153;
-    width: 100%;
+    width: 375px;
   }
   .header img {
     width: 160px;
@@ -338,15 +327,16 @@ html {
 
 @media (max-width: 768px) {
   .banner {
-    width: 50%;
+    width: 335px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 32px 20px 0 20px;
+    padding: 32px 20px 0 20px;
     margin-bottom: 32px;
   }
   .banner .banner-l {
+    margin-left: 0px;
     padding-top: 20px;
   }
   .banner .banner-l h3 {
@@ -368,9 +358,14 @@ html {
 }
 
 @media (max-width: 768px) {
-  .banner-l .p2 {
-    width: 440px;
-    margin: 0;
+  .banner-l {
+    width: 335px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

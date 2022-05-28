@@ -36,7 +36,7 @@ html {
 
     @media (max-width: 768px){
         border-bottom: 3px solid #FFD153;
-        width: 100%;
+        width: 375px;
         img {
             width: 160px;
         }
@@ -62,11 +62,12 @@ html {
     height: 100vh;
 
     @media (max-width: 768px) {
-        width: 50%;
+        width: 335px;
         flex-direction: column;
-        padding-top: 32px 20px 0 20px;
+        padding: 32px 20px 0 20px;
         margin-bottom: 32px;
         .banner-l {
+            margin-left:0px;
             padding-top: 20px;
             h3 {
                 font-size: 32px;
@@ -86,9 +87,10 @@ html {
     flex-direction: column;
     width: 450px;
     @media (max-width:768px){
-        .p2{
-            width: 440px;
-            margin: 0;        }
+        width: 335px;
+        justify-content: center;
+        align-items: center;
+       
     }
 }
 .banner-r {
