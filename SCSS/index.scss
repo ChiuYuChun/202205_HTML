@@ -214,7 +214,7 @@ align-items: center;
     .listrobot-l {
         width: 335px;
         align-items: center;
-        
+        justify-content: center;
     }
 }
 
@@ -386,7 +386,7 @@ a {
   @media (max-width:768px) {
     background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg");
     background-repeat: no-repeat;
-    background-size: 375px;
+    background-size: 100%;
     z-index: -1;
     padding-top: 100px;
     p {
