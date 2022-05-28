@@ -1,7 +1,7 @@
 @import "reset";
 @import "./module/style.scss";
 @import "background";
-
+@import "second";
 html {
 
     font-family:'Wendy One', sans-serif;
@@ -16,7 +16,7 @@ html {
 //   }
 
 .header {
-    width: 1366px;
+    max-width: 1366px;
     margin: 0 auto;
     justify-content: space-between;
     padding: 20px 32px;
@@ -32,13 +32,17 @@ html {
         padding: 12px 32px;
         border-radius: 22px;
         text-decoration: none;
+        &:hover{
+            background: #e45046;
+        }
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         border-bottom: 3px solid #FFD153;
-        width: 375px;
+        width: 390px;
         img {
             width: 160px;
+            margin-top: 5px;
         }
 
         .a {
@@ -49,10 +53,14 @@ html {
             padding: 12px 24px;
             border-radius: 22px;
             text-decoration: none;
+            &:hover{
+                background: #e45046;
+            }
         }
-   
+
     }
 }
+
 .banner {
 
     margin: 0 auto;
@@ -61,38 +69,48 @@ html {
     align-items: center;
     height: 100vh;
 
-    @media (max-width: 768px) {
-        width: 335px;
-        flex-direction: column;
-        padding: 32px 20px 0 20px;
-        margin-bottom: 32px;
-        .banner-l {
-            margin-left:0px;
-            padding-top: 20px;
-            h3 {
-                font-size: 32px;
-                font-weight: 1000;
-            }
+@media (max-width: 768px) {
+    width: 350px;
+    flex-direction: column;
+    padding: 32px  ;
+    margin-bottom: 32px;
+    .banner-l {
+        padding-top: 20px;
+        h3 {
+            width: 335px;
+            font-size: 32px;
+            font-weight: 1000;
+        }
+p{
+    width: 335px;
+}
+.p2{
+    font-size: 16px;
+    width: 335px;
+    line-height: 1.5;
+}
 
         }
-        .banner-r{
-          width: 80vw;
-          height: 80vh;
+        .banner-r {
+            width: 80vw;
+            height: 80vh;
         }
-        
+
     }
 
 }
+
 .banner-l {
     flex-direction: column;
     width: 450px;
-    @media (max-width:768px){
+    @media (max-width:768px) {
         width: 335px;
         justify-content: center;
         align-items: center;
-       
+
     }
 }
+
 .banner-r {
     width: 532px;
 
@@ -100,22 +118,20 @@ html {
 .textbg {
     display: block;
     margin-top: 100px;
-    @media (max-width:768px){
-        margin-top: 0px;
-        
+    @media (max-width:768px) {
+        margin-top: 0;
+
+        margin-bottom: 8px;   
     }
-    
-    
+   
 }
     
 .textbg2 {
 
     @media (max-width:768px){
-        margin-top: 60px;
-        
+        margin-top: 60px;   
     }
-    
-    
+      
 }
 
 .item {
@@ -123,28 +139,28 @@ html {
     margin: 0 auto;
     justify-content: space-between;
     @media (max-width: 768px) {
-        
-flex-wrap: wrap;
-width: 100%;
-justify-content: center;
-align-items: center;
-h2{
-font-size: 18px;
-} 
 
-}
-.card-img {
-    width: 90px;
-    @media (max-width: 768px){
-        width: 60px;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 18px;
+        }
+
     }
-}
-.card {
-    width: 245px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+    .card-img {
+        width: 90px;
+        @media (max-width: 768px) {
+            width: 60px;
+        }
+    }
+    .card {
+        width: 245px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 }
 
@@ -186,7 +202,6 @@ align-items: center;
 
             padding: 16px 0 24px;
         }
-
 
         @media(max-width: 768px){
             margin: 0 auto;
@@ -252,11 +267,11 @@ align-items: center;
    
        
     }
- @media(max-width: 756px){
-     
-margin: 24px 15px 0 15px;
+ @media(max-width: 756px) {
+    margin: 24px 15px 0;
 
- }
+}
+
 }
 .listrobot-r {
     justify-content: center;
@@ -268,9 +283,12 @@ margin: 24px 15px 0 15px;
         align-items: center;
         background: #56C4C5;
         color: white;
-        padding: 8px 32px;
+        padding: 12px 32px;
         border-radius: 22px;
         text-decoration: none;
+        &:hover{
+            background: #4aabad;
+        }
     }
     .listrobotbtn {
         width: 136px;
@@ -303,6 +321,9 @@ a {
     padding: 12px 32px;
     border-radius: 27px;
     text-decoration: none;
+    &:hover{
+        background: #4aabad;
+    }
 }
 
     }
@@ -380,9 +401,6 @@ a {
     align-content: center;
     flex-direction: column;
     z-index: -1;
-
-
-
   @media (max-width:768px) {
     background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg");
     background-repeat: no-repeat;
@@ -392,6 +410,7 @@ a {
     p {
         font-size: 24px;
     }
+    margin-top: 94px;
 }
 
 
@@ -429,13 +448,8 @@ a {
     a {
         margin-top: 24px;
         font-size: 18px;
-    }
-    
+    }  
   }
-
-
-
-
     }
 }
 

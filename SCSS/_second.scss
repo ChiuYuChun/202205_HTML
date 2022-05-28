@@ -1,0 +1,36 @@
+.banner2 {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+margin-left: 100px;
+margin-top: 100px;
+@media (max-width: 768px) {
+    width: 335px;
+    flex-direction: column;
+    padding: 32px 20px 0;
+    margin-bottom: 32px;
+    .banner2-l {
+        margin-left: 0;
+        padding-top: 20px;
+        h3 {
+            font-size: 32px;
+            font-weight: 1000;
+        }
+
+
+        }
+   
+    }
+
+}
+
+.banner2-l {
+    flex-direction: column;
+    @media (max-width:768px) {
+        width: 335px;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
