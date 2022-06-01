@@ -65,17 +65,17 @@ background-size: 150px;
 
 // 第二頁
 .page2-1{
-  background:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+  background:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size:100%,250px;
   position: relative;
-  background-position: right top;
+  background-position: right top,-35% 75%;
 
 
   @media (min-width:576px){
-    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
     background-repeat: no-repeat;
-    background-position: right top,-20% 70%;
+    background-position: right top,-25% 85%;
     background-size: 816px,360px;
     position: relative;
 

@@ -284,18 +284,18 @@ sub {
 }
 
 .page2-1 {
-  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%,250px;
   position: relative;
-  background-position: right top;
+  background-position: right top,-35% 75%;
 }
 
 @media (min-width: 576px) {
   .page2-1 {
-    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
     background-repeat: no-repeat;
-    background-position: right top,-20% 70%;
+    background-position: right top,-25% 85%;
     background-size: 816px,360px;
     position: relative;
   }
@@ -649,7 +649,7 @@ html {
   position: fixed;
   z-index: 3;
   right: 16px;
-  top: 775px;
+  top: 80%;
   width: 50px;
   height: 50px;
   padding: 15px 0px;
