@@ -62,14 +62,26 @@
 .color-gray{
     color:#747474
 }
+.color-bl{
+    color: #56C4C5;
+}
 .pad-lr24{
     padding: 0 24px;
 }
 .pad-20{
     padding: 20px;
 }
+.pad-r-16{
+   padding-right: 16px;
+}
 .pad-top-8{
     padding-top: 8px;
+}
+.pad-8{
+    padding: 8px;
+}
+.text-pad{
+    padding:15px 0 7px 8px;
 }
 .pad-16{
     padding: 16px;
@@ -110,4 +122,7 @@
 }
 .circle{
     border-radius: 50px;
+}
+.d-none{
+    display: none;
 }
