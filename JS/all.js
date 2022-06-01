@@ -17,7 +17,7 @@ $(document).ready(function () {
         $("html,body").animate({scrollTop: 0}, 1000);
     });
 
-    
+// 價格
     $(".btn-num").click(function(e){
         e.preventDefault();
         $(this).text();
