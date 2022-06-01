@@ -301,6 +301,13 @@ sub {
   }
 }
 
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .banner2 {
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -413,6 +420,12 @@ sub {
 @media (max-width: 768px) {
   .price2-message {
     width: 380px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0 auto;
@@ -435,7 +448,6 @@ sub {
 }
 
 .price2box p {
-  width: 396px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 32px;
@@ -443,7 +455,7 @@ sub {
 
 @media (max-width: 768px) {
   .price2box {
-    width: 390px;
+    width: 335px;
     margin-bottom: 24px;
   }
 }
@@ -460,9 +472,8 @@ sub {
 
 @media (max-width: 768px) {
   .price2 {
+    width: 300px;
     margin: 0 auto;
-    margin-left: 32px;
-    margin: 36px;
   }
   .price2 h4 {
     font-size: 28px;
@@ -490,8 +501,9 @@ sub {
 }
 
 @media (max-width: 768px) {
-  .price2num .price2num, .price2num .price2money, .price2money .price2num, .price2money .price2money {
+  .price2num, .price2money {
     width: 139px;
+    margin: 0 auto;
   }
 }
 
@@ -514,6 +526,12 @@ sub {
 
 .price2information ul li {
   padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .price2information ul li {
+    font-size: 14px;
+  }
 }
 
 .price2-endbtn {
@@ -546,6 +564,12 @@ sub {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .price2-endbtn {
+    width: 335px;
+  }
+}
+
 .question {
   width: 904px;
   margin: 0 auto;
@@ -553,7 +577,8 @@ sub {
 
 @media (max-width: 768px) {
   .question {
-    width: 334px;
+    width: 370px;
+    margin-bottom: 60px;
   }
 }
 
@@ -574,6 +599,19 @@ sub {
           justify-content: space-between;
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
+}
+
+@media (max-width: 768px) {
+  .question-top h2 {
+    padding: 0;
+    padding-left: 16px;
+    font-size: 16px;
+  }
+  .question-top h3 {
+    padding: 0;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
 }
 
 .question-text {
@@ -611,7 +649,7 @@ html {
   position: fixed;
   z-index: 3;
   right: 16px;
-  top: 600px;
+  top: 775px;
   width: 50px;
   height: 50px;
   padding: 15px 0px;
